@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Unreleased
 
+## [1.3.1] - 2021-10-13
+
+### Added
+- new SimpleSingleton class that does not inherit from MonoBehaviour
+
+### Changed
+- meta files due to Unity migration, synchronized with other assets
+
 ## [1.3.0] - 2021-09-15
 
 ### Changed

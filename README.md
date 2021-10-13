@@ -4,6 +4,9 @@ A singleton is a development pattern that prevents having multiple instances of 
 It allows also any script to access this one wihout requiring a manual link between the two.
 
 This one is a generic Singleton that allows you to inherit from it from your class to access its instance with the static Instance property.
+There are two singleton:
+- Singleton<T> that inherits from MonoBehaviour
+- SimpleSingleton that does not
 
 ## Usage
 
