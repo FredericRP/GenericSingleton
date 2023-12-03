@@ -7,6 +7,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Unreleased
 
+## [1.3.3] - 2023-12-03
+
+### Fixed
+- Typo in a debug log
+
+### Changed
+- Made OnAwake async if needed
+- Override references to get none on the assembly definition by default
+
 ## [1.3.2] - 2022-04-06
 
 ### Fixed

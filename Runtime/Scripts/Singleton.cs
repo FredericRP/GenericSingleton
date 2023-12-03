@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace FredericRP.GenericSingleton
 {
@@ -87,7 +88,9 @@ namespace FredericRP.GenericSingleton
       }
     }
 
-    public virtual void OnAwake() { }
+#pragma warning disable CS1998 // Cette méthode async n'a pas d'opérateur 'await' et elle s'exécutera de façon synchrone
+    public virtual async void OnAwake() { }
+#pragma warning restore CS1998 // Cette méthode async n'a pas d'opérateur 'await' et elle s'exécutera de façon synchrone
 
     void Awake()
     {
@@ -104,7 +107,7 @@ namespace FredericRP.GenericSingleton
       if (FindObjectsOfType(typeof(T)).Length > 1)
       {
 #if UNITY_EDITOR
-        Debug.LogError("[Singleton<" + typeof(T) + ">] Something went really wrong " + " - there should never be more than 1 singleton!" + " Reopenning the scene might fix it.");
+        Debug.LogError("[Singleton<" + typeof(T) + ">] Something went really wrong " + " - there should never be more than 1 singleton!" + " Reopening the scene might fix it.");
 #endif
       }
     }

@@ -1,6 +1,6 @@
 {
     "name": "com.fredericrp.singleton",
-    "version": "1.3.2",
+    "version": "1.3.3",
     "displayName": "FRP GenericSingleton",
     "description": "A generic singleton: a singleton is a development pattern that prevents having multiple instances of the same component in a scene. It allows also any script to access this one wihout requiring a manual link between the two.",
     "unity": "2020.1",
